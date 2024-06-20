@@ -1,0 +1,16 @@
+{
+  "name": "Remove trailing numbers from subheadings",
+  "component": true,
+  "license_url": null,
+  "about_url": null,
+  "authors": "Peter French",
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+  },
+  "color_schemes": {
+  },
+  "modifiers": {
+  }
+}

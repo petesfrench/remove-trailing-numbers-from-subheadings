@@ -1,0 +1,22 @@
+<script type="text/discourse-plugin" version="0.12.3">
+  // Removes trailing numbers that are automatically added by discourse ('section-heading-3' => 'section-heading')
+  api.onPageChange(() => {
+    document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((heading) => {
+      const anchor = heading.querySelector('a.anchor');
+      if (anchor) {
+        let id = anchor.getAttribute('name');
+        if (id) {
+          let newId = id.replace(/-\d+$/, '');
+          
+          anchor.setAttribute('name', newId);
+          anchor.setAttribute('href', `#${newId}`);
+          
+          // Updates any links to this heading within the document
+          document.querySelectorAll(`a[href="#${id}"]`).forEach((link) => {
+            link.setAttribute('href', `#${newId}`);
+          });
+        }
+      }
+    });
+  });
+</script>
