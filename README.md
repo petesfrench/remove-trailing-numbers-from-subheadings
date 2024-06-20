@@ -1,6 +1,6 @@
 ## Description
 
-A simple JS theme component that removes the trailing numbers from sub-headings in Discourse posts.
+A simple Discourse theme component that uses JS to remove the trailing numbers from sub-heading anchors with Discourse topics.
 
 ## Example
 
