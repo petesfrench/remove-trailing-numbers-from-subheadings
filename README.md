@@ -5,10 +5,13 @@ A simple Discourse theme component that uses JavaScript to remove the trailing n
 ## Example
 
 Before:
+```
 <a name="active-python-modules-1" class="anchor" href="#active-python-modules-1"></a>
-
+```
 After:
+```
 <a name="active-python-modules" class="anchor" href="#active-python-modules"></a>
+```
 
 ## Installation
 
